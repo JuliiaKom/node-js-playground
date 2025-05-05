@@ -16,4 +16,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./task_2_8 online store
+          publish_dir: ./task_1_8_mobile-first
