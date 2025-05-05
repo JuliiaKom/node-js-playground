@@ -1,0 +1,163 @@
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.main-title {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 72px;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    padding-bottom: 10px;
+}
+
+.main-title::after {
+    content: "es";
+    color: white;
+    background-color: rgba(255, 61, 0, 1);
+    display: inline-block;
+    line-height: 32px;
+}
+
+.buttons {
+    margin-block: 60px;
+}
+
+.button {
+    background-color: white;
+    border: 1px solid rgba(255, 61, 0, 1);
+    color: rgba(255, 61, 0, 1);
+    padding: 9px 35px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.button.active,
+.button:hover {
+    background-color: rgba(255, 61, 0, 1);
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fox-img {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+}
+
+.card-content {
+    padding-inline: 10px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+    width: 100%;
+
+}
+
+.card-title {
+    margin: 0;
+    font-size: 23px;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+.likes {
+    color: rgba(255, 61, 0, 1);
+    font-size: 14px;
+}
+
+.read-more {
+    color: rgba(255, 61, 0, 1);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (max-width: 1220px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-inline: 15px;
+    }
+
+    .buttons {
+        margin-block: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 8px 25px;
+    }
+
+    .button.pet-fox {
+        width: 100%;
+    }
+
+    :root {
+        --fox-gap: 10px;
+    }
+
+    .kit-red-fox {
+        width: calc(50% - var(--fox-gap));
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .fox-img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin-block: 15px;
+    }
+
+    .card-title {
+        display: flex;
+        align-items: center;
+    }
+}

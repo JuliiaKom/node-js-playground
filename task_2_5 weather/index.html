@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquarda+Bastarda+9&family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <span class="text-logo">ed</span>
+            <img class="img-logo" src="/images/text-logo.png" alt="img-logo">
+        </div>
+
+        <div class="search-box">
+            <input id="city-input" type="text" placeholder="Київ, Kyiv, Ukraine" />
+            <button id="clean-btn">❌</button>
+        </div>
+        <p class="error-text"></p>
+        <p class="selected-city">Celected: <span id="selected-city"></span></p>
+
+        <div class="weather-box">
+            <p class="temperature-box"></p>
+            <div class="weather-info">
+                <p class="condition"></p>
+                <h2 class="city-name-box"></h2>
+            </div>
+            <img class="forecast-icon" alt="Weather Icon">
+        </div>
+        <!-- 5-day weather container -->
+        <div class="forecast-box">
+            <!-- ------ first day----- -->
+            <div class="forecast-item">
+                <p class="day-name"></p>
+                <img class="forecast-icon" alt="weather icon">
+                <p class="weather-condition"></p>
+                <div class="temperature-column">
+                    <p class="temperature-label">Day</p>
+                    <p class="forecast-day-temperature"></p>
+                    <p class="forecast-night-temperature"></p>
+                    <p class="temperature-label">Night</p>
+                </div>
+                <!-- ----second day----- -->
+            </div>
+            <div class="forecast-item">
+                <p class="day-name"></p>
+                <img class="forecast-icon" alt="weather icon">
+                <p class="weather-condition"></p>
+                <div class="temperature-column">
+                    <p class="temperature-label">Day</p>
+                    <p class="forecast-day-temperature"></p>
+                    <p class="forecast-night-temperature"></p>
+                    <p class="temperature-label">Night</p>
+                </div>
+                <!-- ----third day----- -->
+            </div>
+            <div class="forecast-item">
+                <p class="day-name"></p>
+                <img class="forecast-icon" alt="weather icon">
+                <p class="weather-condition"></p>
+                <div class="temperature-column">
+                    <p class="temperature-label">Day</p>
+                    <p class="forecast-day-temperature"></p>
+                    <p class="forecast-night-temperature"></p>
+                    <p class="temperature-label">Night</p>
+                </div>
+                <!-- ----fourth day----- -->
+            </div>
+            <div class="forecast-item">
+                <p class="day-name"></p>
+                <img class="forecast-icon" alt="weather icon">
+                <p class="weather-condition"></p>
+                <div class="temperature-column">
+                    <p class="temperature-label">Day</p>
+                    <p class="forecast-day-temperature"></p>
+                    <p class="forecast-night-temperature"></p>
+                    <p class="temperature-label">Night</p>
+                </div>
+                <!-- ----fifth day----- -->
+            </div>
+            <div class="forecast-item">
+                <p class="day-name"></p>
+                <img class="forecast-icon" alt="weather icon">
+                <p class="weather-condition"></p>
+                <div class="temperature-column">
+                    <p class="temperature-label">Day</p>
+                    <p class="forecast-day-temperature"></p>
+                    <p class="forecast-night-temperature"></p>
+                    <p class="temperature-label">Night</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

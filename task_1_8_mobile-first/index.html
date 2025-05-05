@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquarda+Bastarda+9&family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="navigate">
+            <img src="/images/logo.png" alt="logo" class="header-logo">
+            <nav>
+                <button class="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                <div class="menu">
+                    <a href="#" id="home" class="menu-link">Home</a>
+                    <a href="#carousel" class="menu-link">About</a>
+                    <a href="#footer" class="menu-link">Contact Us</a>
+                    <button class="close">×</button>
+                </div>
+            </nav>
+            <!-- Затемнення фону -->
+            <div class="overlay"></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="content">
+                <h1 class="container-title">New E-commerce App best for You</h1>
+                <p class="container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sed vulputate
+                    vitae velit dictum cursus
+                    amet. Turpis donec ut velit quis. Cursus commodo, eget urna, sapien amet.</p>
+            </div>
+            <div class="iconApp">
+                <img src="/images/google.png" class="container-img" alt="google">
+                <img src="/images/appStore.png" class="container-img" alt="appStore">
+
+                <!-- Нові картинки для мобільної версії -->
+                <img src="/images/googlePlay mob.png" class="container-img google-mobile" alt="google">
+                <img src="/images/AppStore Red.png" class="container-img appstore-mobile" alt="appStore">
+            </div>
+
+            <div class="phone phone-background">
+                <div class="screen"></div> <!-- Екран телефону -->
+                <img src="/images/phone-logo.png" alt="foxminded logo" class="logo">
+            </div>
+            <div class="phone phone-overlay">
+                <img src="/images/fox.png" alt="fox" class="phone-fox">
+            </div>
+        </div>
+
+    </section>
+    <!-- section coontainer end -->
+
+    <section>
+        <div class="content-cards">
+            <h1 class="cards-title">What we do to help our customers in digital era.</h1>
+            <div class="card card-receive">
+                <img src="/images/card2.png" alt="Receive" class="card-image">
+                <h2 class="cardTitle">Receive</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua.</p>
+                <a href="#" class="learn-more">Learn more →</a>
+            </div>
+            <!-- -----------card-receive---------- -->
+            <div class="card card-send">
+                <img src="/images/card1.png" alt="Send" class="card-image">
+                <h2 class="cardTitle">Send</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua.</p>
+                <a href="#" class="learn-more">Learn more →</a>
+            </div>
+            <!-- ----------card-send---------- -->
+            <div class="card card-buy">
+                <img src="/images/card3.png" alt="Buy" class="card-image">
+                <h2 class="cardTitle">Buy</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua.</p>
+                <a href="#" class="learn-more">Learn more →</a>
+            </div>
+            <!-------- card-buy----------->
+        </div>
+    </section>
+    <!-- content-cards end -->
+
+    <section class="steps">
+        <h2 class="icon-title">How it works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="icon">
+                    <img src="/images/icon-men.png" class="icon-img" alt="Create an account">
+                </div>
+                <h2 class="title-bottom-icon">Create an account</h2>
+                <p class="icon-text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <img src="/images/icon-carbon_security.png" class="icon-img" alt="Get authorization">
+                </div>
+                <h2 class="title-bottom-icon">Get authorization</h2>
+                <p class="icon-text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <img src="/images/icon-smile.png" class="icon-img" alt="Enjoy the app">
+                </div>
+                <h2 class="title-bottom-icon">Enjoy the app</h2>
+                <p class="icon-text">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+        </div>
+    </section>
+    <!-- section steps end -->
+
+    <section id="carousel">
+        <div class="carousel-container">
+
+            <div class="background-img-carousel">
+                <img src="/images/main-fox.png" alt="main-fox" class="main-fox">
+            </div>
+            <h1 class="carouselTitle"></h1>
+            <div class="carousel-title">
+                <p class="carouselText"></p>
+                <p class="carouselText-fox"></p>
+            </div>
+
+        </div>
+
+
+
+        <div class="carousel-buttons">
+            <button class="carouselBtn prev-button">&lt;</button>
+            <button class="carouselBtn next-button">&gt;</button>
+        </div>
+    </section>
+    <!-- carousel-container end -->
+
+    <section class="section-app">
+        <div class="phone device-background-left">
+            <div class="screen"></div> <!-- Екран телефону -->
+            <img src="/images/fox.png" alt="foxminded logo" class="logo">
+        </div>
+        <div class="phone device-overlay">
+            <img src="/images/logo-device.png" alt="logo-device" class="logo">
+        </div>
+        <div class="phone device-background-right">
+            <div class="screen"></div> <!-- Екран телефону -->
+            <img src="/images/headFox.png" alt="headFox" class="logo">
+        </div>
+
+        <div class="app-download">
+            <h2 class="app-download-title">Download app to enjoy more!</h2>
+            <p class="app-download-text">Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis
+                elementum amet vitae et
+                etiam nec. Varius volutpat hac adipiscing tincidunt pretium.</p>
+
+            <div class="container-button">
+                <img src="/images/google.png" class="container-button" alt="google">
+                <img src="/images/appStore.png" class="container-button" alt="appStore">
+            </div>
+        </div>
+    </section>
+    <!-- -------section-app------ -->
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2 class="footer-logo">foxminded</h2>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Quick Links</h4>
+                    <ul class="footer-column-lists">
+                        <li class="footer-list"><a href="#" class="footer-list-link">Sign Up</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Others</h4>
+                    <ul class="footer-column-lists">
+                        <li class="footer-list"><a href="#" class="footer-list-link">User FAQs</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list-link">Contact Us</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list-link">Legal</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list-link">Privacy Policy</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list-link">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Products</h4>
+                    <ul class="footer-column-lists">
+                        <li class="footer-list"><a href="#" class="footer-list-link">Send</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list-link">Receive</a></li>
+                        <li class="footer-list"><a href="#" class="footer-list-link">Buy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-newsletter-title">Subscribe to our newsletter and be the first to know about our
+                        updates</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Email Address" class="input-email">
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-bottom-span">Foxminded © 2023. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="/images/-youtube.png" alt="YouTube" class="social-icons-img"></a>
+                <a href="#"><img src="/images/instagram.png" alt="Instagram" class="social-icons-img"></a>
+                <a href="#"><img src="/images/facebook.png" alt="Facebook" class="social-icons-img"></a>
+                <a href="#"><img src="/images/twitter.png" alt="Twitter" class="social-icons-img"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

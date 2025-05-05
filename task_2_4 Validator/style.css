@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-bottom: 150px;
+}
+
+.container {
+    background-color: rgba(214, 66, 0, 1);
+    height: 214px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.title {
+    font-family: "Roboto", serif;
+    color: white;
+    font-size: 40px;
+    line-height: 72.72px;
+    padding-left: 409px;
+}
+
+.logo {
+    margin-top: 86px;
+    padding-right: 100px;
+}
+
+main {
+    padding: 40px;
+    
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 20px);
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+.email-width {
+    flex: 1 1 100%;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: rgba(214, 66, 0, 1);
+}
+
+.form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.confirm-password:focus {
+    border-color: rgba(235, 87, 87, 1);
+    outline: none;
+    box-shadow: 0 0 5px rgba(249, 203, 51, 0.5);
+}
+
+.password:focus {
+    outline: none;
+    border-color: darkgreen;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+}
+
+.confirm-password::placeholder {
+    color: rgba(235, 87, 87, 1);
+    opacity: 1;
+}
+
+.form-row {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.gender-container {
+    display: flex;
+    gap: 80px;
+    position: relative;
+    margin-bottom: 20px; 
+}
+
+.hobbies-container {
+    display: flex;
+    gap: 80px;
+}
+
+.radio-gender,
+.checkbox-hobbies {
+    appearance: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    margin: 0 auto 5px auto;
+    border: 2px solid #ccc;
+}
+
+.checkbox-hobbies:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 0%;
+    left: 26%;
+}
+
+.radio-gender:checked,
+.checkbox-hobbies:checked {
+    background-color: rgba(214, 66, 0, 1);
+    border: 4px solid rgba(255, 203, 186, 1);
+    border-radius: 50%;
+    appearance: none;
+}
+
+.range-control-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.income-range {
+    flex-grow: 1;
+}
+
+.btn-incom {
+    background-color: rgba(214, 66, 0, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 94px;
+    height: 42px;
+    font-size: 17px;
+}
+
+.profilePicture {
+    border: none;
+}
+
+.profilePicture::file-selector-button {
+    background-color: rgba(119, 118, 126, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bio {
+    height: 157px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btn-submit {
+    background-color: rgba(214, 66, 0, 1);
+    border: 1px solid rgba(184, 182, 191, 1);
+    width: 327px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    margin-top: 47px;
+    float: right;
+    cursor: pointer;
+}
+
+.gender-error {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 32px;
+        padding-left: 0;
+    }
+
+    .logo {
+        margin-top: -27px;
+        padding-right: 0;
+        width: 203px;
+        height: 145px;
+    }
+
+    .form {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .form-group {
+        flex: 1 1 100%;
+        font-size: 14px;
+    }
+
+    .form-input.bio {
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+
+    .gender-container {
+        gap: 115px;
+    }
+
+    .hobbies-container {
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+
+    .range-control-button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .income-range {
+        width: 100%;
+    }
+
+    .btn-incom {
+        order: -1;
+        width: auto;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .profilePicture {
+        font-size: 17px;
+    }
+
+    .btn-submit {
+        border: 2px solid rgba(214, 66, 0, 1);
+        color: rgba(214, 66, 0, 1);
+        background-color: transparent;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

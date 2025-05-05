@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "name": "Stylish chair",
+      "price": 120,
+      "category": "Forest",
+      "image": "./images/img1.png",
+       "rating": "★★★★★"
+    },
+    {
+      "id": 2,
+      "name": "Stylish chair",
+      "price": 120,
+      "category": "Office",
+      "image": "./images/img5.png",
+       "rating": "★★★★★"
+    },
+    {
+      "id": 3,
+      "name": "Stylish chair",
+      "price": 120,
+      "category": "Foxs kids",
+      "image": "./images/img2.png",
+       "rating": "★★★★★"
+    },
+    {
+      "id": 4,
+      "name": "Stylish chair",
+      "price": 120,
+      "category": "Foxs kids",
+      "image": "./images/img6.png",
+       "rating": "★★★★★"
+    },
+    {
+      "id": 5,
+      "name": "Stylish chair",
+      "price": 120,
+      "category": "Forest",
+      "image": "./images/img3.png",
+       "rating": "★★★★★"
+    },
+    {
+      "id": 6,
+      "name": "Stylish chair",
+      "price": 120,
+      "category": "Other",
+      "image": "./images/img7.png",
+       "rating": "★★★★★"
+    },
+    {
+      "id": 7,
+      "name": "Stylish chair",
+      "price": 120,
+      "category": "Forest",
+      "image": "./images/img4.png",
+       "rating": "★★★★★"
+    },
+    {
+      "id": 8,
+      "name": "Stylish chair",
+      "price": 120,
+      "category": "Foxs kids",
+      "image": "./images/img8.png",
+       "rating": "★★★★★"
+    }
+  ]

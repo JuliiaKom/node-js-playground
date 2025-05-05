@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquarda+Bastarda+9&family=Kalnia:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h2 class="title">Create Account</h2>
+            <img class="logo" src="./images/logo.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <!-- first-name -->
+        <form class="form">
+            <div class="form-group">
+                <label for="first-name">First name*</label>
+                <input type="text" class="form-input first-name" name="first-name" required
+                    placeholder="Enter your first name">
+            </div>
+            <!-- Last name* -->
+            <div class="form-group">
+                <label for="last-name">Last name*</label>
+                <input type="text" class="form-input last-name" name="last-name" required
+                    placeholder="Enter your last name">
+            </div>
+            <!-- Email -->
+            <div class="form-group email-width">
+                <label for="email">Email*</label>
+                <input type="email" class="form-input email-input" required placeholder="Enter your email">
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" class="form-input password" placeholder="" required minlength="6" maxlength="10">
+            </div>
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password*</label>
+                <input type="password" class="form-input confirm-password"
+                    placeholder="Enter correct your confirm password" required minlength="6" maxlength="10">
+            </div>
+            <!-- container for Gender and Hobbies -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="">Gender:</label>
+                    <div class="gender-container">
+                        <label><input type="radio" class="radio-gender" name="gender" value="male" required>Male</label>
+                        <label><input type="radio" class="radio-gender" name="gender" value="female"
+                                required>Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hobbies">Hobbies</label>
+                    <div class="hobbies-container">
+                        <label for="hobby-music">
+                            <input type="checkbox" class="checkbox-hobbies" name="hobbies" value="music"
+                                id="hobby-music">
+                            <span>Music</span>
+                        </label>
+
+                        <label for="hobby-sports">
+                            <input type="checkbox" class="checkbox-hobbies" name="hobbies" value="sports"
+                                id="hobby-sports">
+                            <span>Sports</span>
+                        </label>
+
+                        <label for="hobby-travel">
+                            <input type="checkbox" class="checkbox-hobbies" name="hobbies" value="travel"
+                                id="hobby-travel">
+                            <span>Travel</span>
+                        </label>
+
+                        <label for="hobby-movies">
+                            <input type="checkbox" class="checkbox-hobbies" name="hobbies" value="movies"
+                                id="hobby-movies" checked>
+                            <span>Movies</span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Source of Income -->
+            <div class="form-group">
+                <label for="income">Source of Income</label>
+                <select name="income" class="form-input" required>
+                    <option value="" disabled selected>Choose your source of income</option>
+                    <option value="employed">Employed</option>
+                    <option value="self-employed">Self-Employed</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="student">Student</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="retired">Retired</option>
+                </select>
+            </div>
+            <!-- Income -->
+            <div class="form-group">
+                <label for="income">Income</label>
+                <div class="range-control-button">
+                    <input type="range" class="income-range" min="0" max="20000" value="20000" required>
+                    <button class="btn-incom" type="button"></button>
+                </div>
+            </div>
+            <!-- Upload Profile Picture -->
+            <div class="form-group">
+                <label for="profilePicture" class="file-label">Upload Profile Picture</label>
+                <input type="file" class="profilePicture" name="profilePicture" required>
+            </div>
+            <!-- Age -->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-input" min="1" value="18" required>
+            </div>
+            <!-- bio -->
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea class="bio" placeholder="Tell about yourself" required></textarea>
+            </div>
+        </form>
+        <button type="button" class="btn-submit">Create</button>
+    </main>
+</body>
+
+</html>

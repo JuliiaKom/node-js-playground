@@ -1,0 +1,73 @@
+.search-bar::placeholder {
+    color: var(--text-dark);
+}
+
+.dark-theme .search-bar::placeholder {
+    color: rgba(154, 153, 162, 1);
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-light);
+    border-radius: var(--country-border-radius);
+    margin-top: 60px;
+    padding: 2px;
+}
+
+.search-bar {
+    flex: 1;
+    padding-inline: 13px 16px;
+    font-size: var(--font-size);
+    border: none;
+    background: transparent;
+    color: inherit;
+}
+
+#searchButton {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    text-indent: -999px;
+    overflow: hidden;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+}
+
+.dark-theme #searchButton {
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+}
+
+#searchButton:hover {
+    opacity: 1;
+}
+
+#searchButton:focus,
+.search-bar:focus {
+    outline: none;
+    border: none;
+}
+
+.btn-theme {
+    width: 70px;
+    height: 30px;
+    border-radius: 99px;
+    cursor: pointer;
+    background-position: center;
+    outline: none;
+    margin-left: auto;
+}
+
+.light-theme .btn-theme {
+    background-image: url('./img/light-mode-icon.png');
+}
+
+.dark-theme .btn-theme {
+    background-image: url('./img/dark-mode-icon.png');
+}

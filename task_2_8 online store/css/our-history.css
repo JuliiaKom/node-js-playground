@@ -1,0 +1,291 @@
+:root {
+  --color-white: rgba(254, 254, 254, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-light-grey: rgba(230, 230, 230, 1);
+  --color-grey: rgba(150, 149, 149, 1);
+  --color-header-mobile: rgba(0, 0, 0, 0.45);
+
+  --font-title: "Playfair Display", serif;
+  --font-body: "Montserrat", sans-serif;
+  --font-default: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--color-white);
+  position: static;
+}
+
+.header-container {
+  padding-left: 20px;
+}
+
+.link {
+  color: var(--color-black);
+}
+
+#cart-icon {
+  background-image: url(./images/cart-icon2.png);
+  background-repeat: no-repeat;
+}
+
+#fox-icon {
+  background-image: url(./images/icon-fox2.png);
+  background-repeat: no-repeat;
+}
+
+#cart-icon,
+.fox-icon {
+  display: block;
+}
+
+.history {
+  font-family: var(--font-default);
+}
+
+.history-container {
+  background-color: var(--color-light-grey);
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.breadcrumbs {
+  color: var(--color-grey);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.history-title {
+  font-size: 50px;
+  font-family: var(--font-title);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.history-blocks {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 5px;
+}
+
+.history-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.history-block-title {
+  font-size: 24px;
+  font-family: var(--font-title);
+  line-height: 34px;
+}
+
+.history-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.history-text {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 3.05px;
+  color: rgba(72, 72, 72, 1);
+}
+
+.mobile-text {
+  display: none;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+#cart-mobile,
+#fox-mobile {
+  display: none;
+}
+
+/* footer */
+.footer {
+  background-color: rgba(25, 25, 25, 1);
+  padding: 30px 40px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  max-width: 240px;
+}
+
+.footer-column-img {
+  width: 100px;
+}
+
+.footer-column-to-text {
+  margin-block: 18px 9px;
+  line-height: 150%;
+  font-size: 14px;
+  color: var(--color-whit);
+}
+
+.footer-column-call {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons-img {
+  width: 23px;
+  height: 23px;
+}
+
+.footer-container-child {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  flex: 1;
+  margin-left: 40px;
+}
+
+.footer-column-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-column-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column-item {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 8px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1)a;
+  margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: inline;
+  }
+
+  #cart-icon,
+  .fox-icon {
+    display: none;
+  }
+
+  #cart-mobile,
+  .fox-mobile {
+    display: inline;
+  }
+
+  .header {
+    background-color: var(--color-header-mobile);
+  }
+
+  .breadcrumbs {
+    margin-top: 0;
+    padding-top: 18px;
+}
+.history-title {
+  margin-block: 14px 20px;
+}
+
+  .history-container {
+    padding-block: 0;
+  } 
+
+  .history-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .history-row:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .history-img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .default-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: block;
+    text-align: left;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column-to-text {
+    max-width: 220px;
+  }
+
+  .footer-container-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 30px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-column-title {
+    margin-bottom: 10px;
+  }
+
+  .footer-column-item {
+    margin-bottom: 6px;
+  }
+
+  .footer-column-last {
+    grid-column: 2;
+    margin-top: -59px;
+  }
+
+}
